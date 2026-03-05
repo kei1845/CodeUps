@@ -1,5 +1,16 @@
 @use "global" as *;
 .sub-blog {
+
+  
+  /* カテゴリーへのリンク消す。
+  -------------------------------------------------- */
+  .breadcrumb a[href*="/blog/category/"],
+  .breadcrumb a[href*="/category/"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+  }
+
   .blog-list-single {
     margin-right: auto;
     margin-left: auto;
